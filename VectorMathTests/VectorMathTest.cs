@@ -1,6 +1,6 @@
 using System;
 using Xunit;
-using VectorMath;
+using VectorLibrary;
 
 namespace VectorExercisesTest
 {
