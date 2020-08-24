@@ -4,7 +4,7 @@ using System.Text;
 
 namespace VectorLibrary
 {
-    public class VectorMath
+    public static class VectorMath
     {
         public static double Magnitude(Vector3 vector)
         {
@@ -14,7 +14,7 @@ namespace VectorLibrary
         public static Vector3 Normalize(Vector3 vector)
         {
             var magnitude = Magnitude(vector);
-            return new Vector3(vector.X / magnitude, vector.Y / magnitude, vector.Y / magnitude);
+            return new Vector3(vector.X / magnitude, vector.Y / magnitude, vector.Z / magnitude);
         }
 
         public static Vector3 Add(Vector3 a, Vector3 b)
